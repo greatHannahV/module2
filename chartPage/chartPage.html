@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="icon" href="../logo/images.jpeg" />
+    <link rel="stylesheet" href="chartPage.css" />
+    <script src="https://www.unpkg.com/@devexperts/dxcharts-lite@2.0.1/dist/dxchart.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@devexperts/dxcharts-lite/": "https://www.unpkg.com/@devexperts/dxcharts-lite@2.0.1/"
+        }
+      }
+    </script>
+    <script type="module" src="./chartPage.js"></script>
+    <title>Stock History”</title>
+  </head>
+  <body>
+    <div class="container"></div>
+		
+	
+    <div class="settings">
+      <label>
+        <input name="chart-type" type="radio" value="candle" checked /> Candle
+      </label>
+      <label> <input name="chart-type" type="radio" value="bar" /> Bar </label>
+      <label>
+        <input name="chart-type" type="radio" value="line" /> Line
+      </label>
+      <label>
+        <input name="chart-type" type="radio" value="area" /> Area
+      </label>
+      <label>
+        <input name="chart-type" type="radio" value="scatterPlot" /> ScatterPlot
+      </label>
+      <label>
+        <input name="chart-type" type="radio" value="hollow" /> Hollow
+      </label>
+      <label>
+        <input name="chart-type" type="radio" value="histogram" /> Histogram
+      </label>
+      <label>
+        <input name="chart-type" type="radio" value="baseline" /> Baseline
+      </label>
+      <label>
+        <input name="chart-type" type="radio" value="trend" /> Trend
+      </label>
+      <label>
+        <input name="chart-type" type="radio" value="heikin-ashi" /> Heikin ashi
+      </label>
+    </div>
+
+		<div id="dxcharts_lite" class="chart"></div>
+		</div>
+    
+  </body>
+</html>
